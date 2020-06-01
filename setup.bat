@@ -29,9 +29,9 @@ where python >nul 2>&1 && (
     exit /b
   )
 
-  echo [INSTALL] Using venv
-  rmdir "venv" /q /s >nul 2>&1
-  python -m venv ./venv
+  echo [INSTALL] Using venvs
+  rmdir "venvs" /q /s >nul 2>&1
+  python -m venvs ./venvs
   .\venv\Scripts\activate
   python -m pip install --upgrade pip wheel
 
